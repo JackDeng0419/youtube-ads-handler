@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 250px; padding: 10px; font-family: Arial, sans-serif; }
+    label { display: block; margin-bottom: 10px; }
+    input[type="range"] { width: 100%; }
+    button { margin-top: 10px; padding: 5px 10px; }
+  </style>
+</head>
+<body>
+  <h2>YouTube Ad Controller</h2>
+  <label>
+    Max Speed: <span id="speedValue">16</span>x
+    <input type="range" id="maxSpeed" min="1" max="16" value="16">
+  </label>
+  <label>
+    <input type="checkbox" id="skipAds" checked> Auto-skip Ads
+  </label>
+  <button id="save">Save Settings</button>
+  <script src="popup.js"></script>
+</body>
+</html>
